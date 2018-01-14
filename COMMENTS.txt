@@ -1,0 +1,21 @@
+Decisão de arquitetura :
+
+ MVVM. Essa arquitetura possui uma melhor distribuição das responsabilidades e deixa o trabalho de comunicação entre os dados da aplicação com a view em si. Esse tipo de organização facilita na leitura e nos testes, principalmente, pois deixa a parte de controle de dados sem depender da view. Vantagem: testabilidade e separação clara de responsabildiades. Não é necessário adicionar interfaces como no MVP.
+
+Lista de dependências:
+
+  espresso: biblioteca para gerar testes de UI. Biblioteca indicada pela Google guideline.
+  junit: biblioteca para gerar testes unitários. Biblioteca indicada pela Google guideline.
+  recyclerview: biblioteca utilizada para melhorar performance de listviews pois gera  os itens somente para mostrá-los na tela.
+  room: biblioteca de persistência (ORM) oficial da Google lançada juntamente com os componentes de arquitetura em sua versão estável em nov 2017.
+  lifecycle: Utilizar os componentes de arquitetura oficiais da Google. Essa biblioteca é oficial para tratar de estados de activities e de realizar a comunicação de dados da forma correta e sem toneladas de código.
+  retrofit : biblioteca para consumir dados via webservice. Simples e performática. Quase não consume memória.
+  picasso: caso houvesse necessidade de carregar imagens, esta biblioteca é importante para carregar de forma correta uma imagem na web a partir de uma url.
+
+
+ Melhora do código:
+
+ Adicionaria os testes unitários e de UI. Deixei as telas por último e teria que trabalhar a implementação delas. A organização faltou terminá-la (passar a chamada do serviço para o ViewModel). 
+
+ Não foi possível concluir: o código das views. Motivo: Tive um foco maior na arquitetura.
+
